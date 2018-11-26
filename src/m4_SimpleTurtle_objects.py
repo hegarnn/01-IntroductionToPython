@@ -14,7 +14,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 """
 ###############################################################################
 #
-# TODO: 1.
+# DONE: 1.
 #   Yes, that means for YOU to DO things per the following instructions:
 #
 #   On Line 13 above, replace  PUT_YOUR_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -116,7 +116,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -126,10 +126,12 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+natasha.speed = 20
+natasha.go_to(rg.Point(200,-200))
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -153,10 +155,16 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+baidan = rg.SimpleTurtle('turtle')
+baidan.pen = rg.Pen('blue',500)
+baidan.speed = 1
+baidan.forward(100)
+baidan.right(90)
+baidan.go_to(rg.Point(-200,100))
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
